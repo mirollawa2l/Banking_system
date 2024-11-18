@@ -988,7 +988,7 @@ void deleteacc()
         {
             sprintf(filename,"%s.txt",accounts[i].account_no);
             err = remove(filename);
-            if(err == 1)
+            if(err == 0)
             {
                 printf("File has been deleted successfully\n");
             }
